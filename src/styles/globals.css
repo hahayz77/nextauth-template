@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));  
+  @apply bg-gradient-radial from-blue-900 to-purple-900 min-h-screen overflow-x-hidden transition-all duration-200 ease-in
+}
+
+
+main{
+  @apply flex justify-center items-center flex-col min-h-screen font-mono
+}
+
+h1{
+  @apply font-extrabold my-8 text-6xl text-transparent bg-clip-text bg-gradient-to-tl from-blue-400 to-purple-400 pl-4 sm:pl-0
+}
+
+button {
+  @apply bg-gradient-to-tl from-blue-800 to-purple-800 text-slate-100 rounded-full px-6 py-2 my-6 block hover:scale-105 hover:bg-gradient-to-tr transition-all duration-300
+}
+

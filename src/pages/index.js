@@ -12,7 +12,7 @@ export default function Home() {
 
     return (
         <main>
-            <h1>Simple NextAuth test</h1>
+            <h1>Simple NextAuth Template</h1>
             <div className='text-white text-xl'>
                 {session ?
                     <>
